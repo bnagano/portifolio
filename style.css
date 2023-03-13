@@ -1,32 +1,32 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .center {
-	max-width:100%;
-	margin: 0 auto;
-	padding: 0 2%;
-	display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
     flex-wrap: wrap;
 }
 
 header {
-	background-color: white;
-	padding: 20px 0;
-	border-bottom: 1px solid rgb(200, 200, 200);
-    
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+
 }
 
 .logo {
-	color: #16507b;
+    color: #16507b;
     padding-top: 8px;
     padding-left: 50px;
 }
 
-.logo h2{
+.logo h2 {
     font-size: 22px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -37,19 +37,19 @@ header {
     padding-top: 8px;
 }
 
-.menu a{
-	color: #124265;
+.menu a {
+    color: #124265;
     font-size: 25px;
     text-decoration: none;
     margin-right: 20px;
     transition: 0.4s;
 }
 
-.menu a:hover{
-	color: #007bff;
+.menu a:hover {
+    color: #007bff;
 }
 
-section.main{
+section.main {
     background-image: url(space2.gif);
     padding: 70px 0;
     background-position: center;
@@ -58,7 +58,7 @@ section.main{
     background-attachment: fixed;
 }
 
-section.conteudo{
+section.conteudo {
     background-image: url(space2.gif);
     padding: 70px 0;
     background-position: center;
@@ -67,72 +67,103 @@ section.conteudo{
     background-attachment: fixed;
 }
 
-.capa{
+.capa {
     width: 100%;
     margin: 60px 0;
     text-align: center;
 }
 
-.capa img{
+.capa img {
     width: 200px;
     height: 200px;
     border-radius: 360px;
 }
 
-.capa h2{
+.capa h2 {
     color: white;
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 10px;
 }
 
-.capa p{
+.capa p {
     color: white;
     font-size: 20px;
     padding-top: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-section.skills{
-    padding: 50px 0;
-    
+section.skills {
+    padding: 30px;
+
 }
 
-.titulo-skills{
+.titulo-skills {
     width: 100%;
     text-align: center;
 }
 
-.titulo-skills h2{
+.titulo-skills h2 {
     color: #124265;
 }
 
-.titulo-skills p{
+.titulo-skills p {
     text-align: center;
     display: flex;
 
 }
 
-.conteudo-skills{
+.conteudo-skills {
     width: 100%;
-    padding-top: 10px;
-    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+    display: flex;
+    column-gap: 40px;
 }
 
-.conteudo-skills i{
-    padding-top: 20px;
+.conteudo-skills i {
     font-size: 50px;
-    margin-right: 40px;
     color: #124265;
 }
 
-.conteudo-skills i:hover{
+.tooltip {
+    position: relative;
+}
+
+.tooltip>i:hover {
     color: #007bff;
     transition: 0.4s;
 }
 
-@media screen and (max-width: 768px){
-    .diferenciais-single{
+.tooltip .tooltipcircle {
+    opacity: 0;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    left: -100%;
+    z-index: 1;
+    display: flex;
+    gap: 5px;
+}
+
+.tooltip:hover .tooltipcircle {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.tooltipcircle i{
+    font-size: 30px;
+}
+
+footer{
+    height: 100px;
+    background-color: #cecece;
+}
+
+@media screen and (max-width: 768px) {
+    .diferenciais-single {
         width: 100%;
         margin-bottom: 20px;
     }

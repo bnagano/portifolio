@@ -157,8 +157,6 @@ section.skills {
     font-size: 30px;
 }
 
-
-
 section.projects{
     background-color: #000;
     width: 100%;
@@ -201,6 +199,7 @@ section.projects h3{
 .cards a{
     width: max-content;
     display: flex;
+    margin-right: 10px;
 }
 
 .cards img {

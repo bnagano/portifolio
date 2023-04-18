@@ -130,8 +130,9 @@ section.skills {
     position: relative;
 }
 
-.tooltip>i:hover {
+.tooltip>i:hover, .tooltip>svg:hover {
     color: #007bff;
+    fill: #007bff;
     transition: 0.4s;
 }
 
@@ -219,19 +220,6 @@ section.projects h3{
     bottom: 0;
     left: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
     height: 50px;
